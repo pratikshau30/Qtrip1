@@ -31,7 +31,8 @@ public class testCase_03 {
        logStatus("driver", "Initializing driver", "Success");
    }
 
-   @Test(dataProvider="DatasetsforQTrip", dataProviderClass=DP.class, enabled=true)
+   @Test(dataProvider="DatasetsforQTrip", dataProviderClass=DP.class, enabled=true,description = "verify booking and cancellation flow" , priority = 3, groups={"Booking and Cancellation Flow"})
+
    public void TestCase03(String NewUserName,String Password, String SearchCity,String AdventureName,String GuestName,String Date,String count) throws InterruptedException{
     
          HomePage home= new HomePage(driver);

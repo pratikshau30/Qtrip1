@@ -29,7 +29,9 @@ public class testCase_02 {
         logStatus("driver", "Initializing driver", "Success");
     }
 
-    @Test(dataProvider = "DatasetsforQTrip", dataProviderClass = DP.class, enabled = true)
+    @Test(dataProvider = "DatasetsforQTrip", dataProviderClass = DP.class, enabled = true,
+    description = "verify Search and Filter flow", priority = 2,
+    groups = {"Search and Filter flow"})
     public void TestCase02(String CityName, String Category_Filter, String DurationFilter,
             String filterdResult, String unfilteredResult) throws InterruptedException {
 
