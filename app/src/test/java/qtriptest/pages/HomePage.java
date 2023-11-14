@@ -5,6 +5,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class HomePage {
@@ -63,10 +65,10 @@ public boolean isCityFound(){
 
 
 public void selectCity() throws InterruptedException{
-    Thread.sleep(2000);
+    Thread.sleep(6000);
     city_result.click();
-//    WebDriverWait wait= new WebDriverWait(driver, 5);
-//    wait.until(ExpectedConditions.urlToBe("https://qtripdynamic-qa-frontend.vercel.app"));
+//    WebDriverWait wait= new WebDriverWait(driver, 10);
+//    wait.until(ExpectedConditions.urlToBe("https://qtripdynamic-qa-frontend.vercel.app/"));
   }   
 
 }
