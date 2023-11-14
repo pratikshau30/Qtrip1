@@ -1,12 +1,14 @@
 package qtriptest.tests;
 
 import qtriptest.DP;
-import qtriptest.tests.DriverSingleton;
+import qtriptest.DriverSingleton;
+import qtriptest.ReportSingleton;
 import qtriptest.pages.AdventurePage;
 import qtriptest.pages.HomePage;
 import java.net.MalformedURLException;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -14,6 +16,9 @@ import org.testng.annotations.Test;
 public class testCase_02 {
     static RemoteWebDriver driver;
     public String lastUsername;
+    // static ExtentReports report;
+    // static ExtentTest test;
+    // static ReportSingleton rs1;
 
     // Method to help us log our Unit Tests
     public static void logStatus(String type, String message, String status) {
@@ -55,3 +60,11 @@ public class testCase_02 {
         adventure.verifyAdventureContents(unfilteredResult);
     }
 }
+
+// @AfterSuite
+//         public void tearDown() {
+//             if (driver != null) {
+//                  ReportSingleton.getInstanceOfSingleTonReportClass().getReport().flush();
+//                 driver.quit();
+//             }
+//         }

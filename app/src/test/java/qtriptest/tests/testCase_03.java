@@ -1,7 +1,7 @@
 package qtriptest.tests;
 
 import qtriptest.DP;
-import qtriptest.tests.DriverSingleton;
+import qtriptest.DriverSingleton;
 import qtriptest.pages.AdventureDetailsPage;
 import qtriptest.pages.AdventurePage;
 import qtriptest.pages.HistoryPage;

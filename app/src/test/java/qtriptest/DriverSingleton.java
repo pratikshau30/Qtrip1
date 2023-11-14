@@ -1,4 +1,4 @@
-package qtriptest.tests;
+package qtriptest;
 
 import java.net.MalformedURLException;
 import java.net.URL;

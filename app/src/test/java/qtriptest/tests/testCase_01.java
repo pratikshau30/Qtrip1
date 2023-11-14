@@ -2,7 +2,7 @@ package qtriptest.tests;
 
 
 import qtriptest.DP;
-import qtriptest.tests.DriverSingleton;
+import qtriptest.DriverSingleton;
 import qtriptest.pages.HomePage;
 import qtriptest.pages.LoginPage;
 import qtriptest.pages.RegisterPage;
